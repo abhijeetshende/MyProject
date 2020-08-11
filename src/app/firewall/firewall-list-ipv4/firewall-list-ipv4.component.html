@@ -83,8 +83,8 @@
               pInputText
               type="text"
               (input)="dt.filter($event.target.value, 'name', 'startsWith')"
-              placeholder="Search by Name"
-              class="p-column-filter"
+              placeholder="Search"
+              class="p-column-filter w-100"
             />
           </th>
           <th>
@@ -94,8 +94,9 @@
               (input)="
                 dt.filter($event.target.value, 'country.name', 'contains')
               "
-              placeholder="Search by Country"
-              class="p-column-filter"
+              placeholder="Search "
+              class="p-column-filter w-100"
+
             />
           </th>
           <th>
