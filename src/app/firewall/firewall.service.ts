@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Customer } from "./Customer";
+import { Firewall } from './firewall';
 import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
@@ -10,15 +10,10 @@ export class FirewallService {
     return this.http
       .get<any>('assets/firewall.json')
       .toPromise()
-      .then((res) =>res.data)
+      .then((res) => <Firewall[]>res.data)
       .then((data) => {
         return data;
       });
   }
-  getCustomersLarge() {
-    return this.http.get<any>('assets/customer-large.json')
-        .toPromise()
-        .then(res => <Customer[]>res.data)
-        .then(data => { return data; });
-}
+
 }

@@ -1,13 +1,144 @@
 {
-    
-       "data": [
-    
-           {"name": "The Godfather", "price": 10, "author": "Mario Puzo"},
-    
-           {"name": "The Fellowship of the Ring", "price": 15, "author": "J.R.R. Tolkien"},
-    
-           {"name": "Harry Potter and the Deathly Hallows", "price": 20, "author": "J.K. Rowling  "}        
-    
-       ]
-    
-    }
+  "data": [
+    {
+      "RuleName": "Allow DNS1",
+      "Source": "Lan, ALL IP Host, All IP Host Group",
+      "Destination": "All",
+      "Schedule": "PeakHours",
+      "Services": "HTTP,HTTPS,FTP"
+    },
+    {
+        "RuleName": "Allow DNS2",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS3",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS4",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 5",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 6",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 7",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 8",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 9",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 10",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 11",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 12",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 13",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 14",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 15",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 16",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 17",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS 18",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS19",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow DNS20",
+        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Destination": "All",
+        "Schedule": "PeakHours",
+        "Services": "HTTP,HTTPS,FTP"
+      }      
+  ]
+}
