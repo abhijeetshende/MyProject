@@ -1,43 +1,43 @@
 {
   "data": [
     {
-      "RuleName": "Allow DNS1",
+      "RuleName": "Traffic to WAN",
       "Source": "Lan, ALL IP Host, All IP Host Group",
-      "Destination": "All",
+      "Destination": "All Wan",
       "Schedule": "PeakHours",
       "Services": "HTTP,HTTPS,FTP"
     },
     {
-        "RuleName": "Allow DNS2",
-        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "RuleName": "Block Malicious",
+        "Source": "Wan, ALL IP Host, ",
         "Destination": "All",
+        "Schedule": "All Time on Weekdays",
+        "Services": "HTTP,HTTPS,FTP"
+      },
+      {
+        "RuleName": "Allow Access",
+        "Source": "Wan, ALL IP Host, All IP Host Group",
+        "Destination": "All Wan",
         "Schedule": "PeakHours",
         "Services": "HTTP,HTTPS,FTP"
       },
       {
-        "RuleName": "Allow DNS3",
-        "Source": "Lan, ALL IP Host, All IP Host Group",
-        "Destination": "All",
+        "RuleName": "Allow DNS",
+        "Source": "Wan",
+        "Destination": "Wan All Host",
         "Schedule": "PeakHours",
         "Services": "HTTP,HTTPS,FTP"
       },
       {
-        "RuleName": "Allow DNS4",
-        "Source": "Lan, ALL IP Host, All IP Host Group",
-        "Destination": "All",
-        "Schedule": "PeakHours",
-        "Services": "HTTP,HTTPS,FTP"
-      },
-      {
-        "RuleName": "Allow DNS 5",
-        "Source": "Lan, ALL IP Host, All IP Host Group",
-        "Destination": "All",
+        "RuleName": "Wireless WLC",
+        "Source": "ALL IP Host,",
+        "Destination": "Wan, Australia, Germany",
         "Schedule": "PeakHours",
         "Services": "HTTP,HTTPS,FTP"
       },
       {
         "RuleName": "Allow DNS 6",
-        "Source": "Lan, ALL IP Host, All IP Host Group",
+        "Source": "Lan",
         "Destination": "All",
         "Schedule": "PeakHours",
         "Services": "HTTP,HTTPS,FTP"

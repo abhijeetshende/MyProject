@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { FirewallService } from '../firewall.service';
 import { Table } from 'primeng/table';
 import { Firewall } from '../firewall';
@@ -10,7 +10,8 @@ import { Firewall } from '../firewall';
 export class FirewallListIpv4Component implements OnInit {
   constructor(private firewallService: FirewallService) {}
   firewallrules: Firewall[];
-
+  cols: any[];
+  _selectedColumns: any[];
 
   loading: boolean = true;
 
@@ -24,7 +25,21 @@ export class FirewallListIpv4Component implements OnInit {
       this.loading = false;
     });
 
-    
+    this.cols = [
+      { field:'RuleName',header:'RuleName'},
+      { field:'Source',header:'Source'},
+      { field:'Destination',header:'Destination'},
+      { field:'Schedule',header:'Schedule'},
+      { field:'Services',header:'Services'},
+      { field:'Action',header:'Action'}
+    ];
+    this._selectedColumns = this.cols;
   }
-  
+  @Input() get selectedColumns(): any[] {
+    return this._selectedColumns;
+  }
+  set selectedColumns(val: any[]) {
+    //restore original order
+    this._selectedColumns = this.cols.filter((col) => val.includes(col));
+  }
 }
