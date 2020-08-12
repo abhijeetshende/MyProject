@@ -4,9 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { FirewallModule } from "./firewall/firewall.module";
-
 @NgModule({
   declarations: [
     AppComponent
@@ -15,9 +12,6 @@ import { FirewallModule } from "./firewall/firewall.module";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    BsDropdownModule.forRoot(),
-   
-    FirewallModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,39 +1,19 @@
 @import '../color.scss';
-.wrapper{
-    display: flex;
-    align-items: stretch;
-    // background-color: #e5e5e5;
-    #sidebar{
-        background-color: gold;
-        min-width: 250px;
-        max-width: 250px;
-        min-height: calc(100vh - 65px);
-        max-height: calc(100vh - 65px);
-        background: gainsboro;
-        transition: all 0.3s;
-        overflow: auto;
-        &.active {
-            margin-left: -250px;
-        }
-        &.sidebar-header {
-            padding: 20px;
-            background: gainsboro;
-        }
-        ul.components {
-            padding: 20px 0;
-            border-bottom: 1px solid #47748b;
-        }
-        ul li a {
-            padding: 10px;
-            font-size: 1.1em;
-            display: block;
-            color:rgb(20, 20, 20);
-        }
-    }
-    #content{
-        background-color:$ngess-primary-color;
-        flex:auto;
-        min-height: calc(100vh - 65px);
-        max-height: calc(100vh - 65px);
-    }
-}
+body {
+    font-size: .875rem;
+  }
+ 
+  
+  /*
+   * Sidebar
+   */
+  
+  .sidebar {
+   max-width: 250px;
+   width: 250px;
+   background: indianred;
+  }
+  .sidebar-and-main-container{
+      background: gray;
+      height: calc(100vh - 56px);
+  }
