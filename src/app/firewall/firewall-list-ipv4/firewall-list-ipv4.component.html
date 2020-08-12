@@ -19,7 +19,6 @@
       <ng-template pTemplate="caption">
         <div class="table-header d-flex">
           <span> IPv4 Firewall Rules Showing 1 of 20</span>
-
           <span class="p-input-icon-left ml-auto">
             <i class="pi pi-search"></i>
             <input
@@ -37,14 +36,15 @@
             [(ngModel)]="selectedColumns"
             optionLabel="header"
             selectedItemsLabel="{0} columns selected"
-            [style]="{ minWidth: '200px' }"
             placeholder="Choose Columns"
           ></p-multiSelect>
           <button class="btn mx-1 disabled-color-bg">
             <i class="fa fa-cog"></i>
           </button>
-          <button class="btn btn-primary">Add Firewall Rule</button>
+          <a class="btn btn-primary" [routerLink]="'../firewall-ipv4-add'" >Add Firewall Rule</a>
+   
         </div>
+
       </ng-template>
       <ng-template pTemplate="header" let-columns>
         <tr>

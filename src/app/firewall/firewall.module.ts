@@ -13,9 +13,11 @@ import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { FirewallIpv4AddruleComponent } from './firewall-ipv4-addrule/firewall-ipv4-addrule.component';
+import { ChipsModule } from "primeng/chips";
+import { BreadcrumbModule } from "primeng/breadcrumb";
 @NgModule({
-  declarations: [FirewallListComponent, FirewallListIpv4Component],
+  declarations: [FirewallListComponent, FirewallListIpv4Component, FirewallIpv4AddruleComponent],
   imports: [
     CommonModule,
     TabsModule.forRoot(),
@@ -28,6 +30,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     InputTextModule,
     FormsModule,
     ReactiveFormsModule,
+    ChipsModule,
+    BreadcrumbModule
+    
   ],
 })
 export class FirewallModule {}

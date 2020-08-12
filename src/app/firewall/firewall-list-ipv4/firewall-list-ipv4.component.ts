@@ -12,7 +12,7 @@ export class FirewallListIpv4Component implements OnInit {
   firewallrules: Firewall[];
   cols: any[];
   _selectedColumns: any[];
-
+  filteredChips:string[];
   loading: boolean = true;
 
   @ViewChild('dt') table: Table;
@@ -41,5 +41,6 @@ export class FirewallListIpv4Component implements OnInit {
   set selectedColumns(val: any[]) {
     //restore original order
     this._selectedColumns = this.cols.filter((col) => val.includes(col));
+    this.filteredChips = this.cols.map((col)=> col.field);
   }
 }
