@@ -5,19 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { FirewallModule } from "./firewall/firewall.module";
+import { Routes } from '@angular/router';
+import { AuthModule } from './auth/auth.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminModule } from './admin/admin.module'
+
+const appRote: Routes= [ 
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent     
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,    
+    AuthModule,
+    AdminModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    BsDropdownModule.forRoot(),
-   
-    FirewallModule
+    BsDropdownModule.forRoot()
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
